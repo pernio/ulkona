@@ -1,5 +1,6 @@
-# ulkona
-A small project to explore new technologies using Java Spring Boot
+# Ulkona
+
+A small project to explore new technologies using Java Spring Boot in a way to make this production-ready.
 
 ## Technologies used
 
