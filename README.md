@@ -102,7 +102,7 @@ Or on Windows
 
 This should be done after the product API works. An example can be found in [this file](src/test/java/app/netlify/jinzo/ulkona/product/application/ProductIntegrationTest.java)
 
-### What did I learn from this
+## What did I learn from this
 
 This project is meant to expand my knowledge about the technologies used in a Java API and to refresh my knowledge about Java Spring Boot.
 
@@ -114,11 +114,11 @@ Within this application, I learned how to use:
 
 This whole project was built with a goal to be production-ready. Of course this will never be used in an actual production environment, but this structure learned me how it's built. A few things I can summarize.
 
-#### Docker
+### Docker
 
 Docker is an easy way to containerize applications and use/test them in a save environment. This also allows me to run this code on any laptop.
 
-#### Package-by-feature
+### Package-by-feature
 
 In smaller applications, APIs are usually built in this structure:
 
@@ -140,6 +140,41 @@ hospitals/
 authentication/
 ```
 
-#### Migrations
+### Migrations
 
 Migrations are "snapshots" of modifications to databases. It is important to **never** change a migration after re-running the application. You should create a new file with a later version/date in its name (depending on hich migrator you use).
+
+## What's next
+
+This is my complete checklist into expanding this project. Things that are done will be striped-through
+
+- ~~Add basic endpoint to revisit Spring Boot~~
+- ~~Create a first migration~~
+- ~~Run application in Docker~~
+- ~~Add products in PostgreSQL~~
+- ~~Add first unit & integration tests~~
+- Add automated tests on Github
+- Add Swagger UI
+- Make a class diagram
+- Add shops
+- Linking products with shops via shop stocks
+- Add customers
+- Link customers with shops via reservations (Using an idempotency key)
+- Concurrency-safe stock reservation (What happens when 2 customers buy at the same time)
+- Reservation expiry
+- Reservation cancellation
+- Reservation collection
+- Add pagination, filtering and sorting
+- Add limited discounts for products
+- Add redis to cache and rate limit
+- RabbitMQ events
+- Notification worker
+- Add Spring Security
+- Customer and employee roles
+- Authentication
+- Authorization rules
+- Request validation
+- Health & metics
+- Logging while keeping an eye on preventing personal data stored
+- Audit logs
+- Add an LLM with Ollama showing reccommendations
