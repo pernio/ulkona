@@ -1,0 +1,2 @@
+-- Initial Ulkona database migration.
+-- Product tables will be added in later migrations.
